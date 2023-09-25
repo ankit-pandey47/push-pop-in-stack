@@ -44,34 +44,4 @@ int main()
     pop();
 }
 
-// #include<iostream>
-// using namespace std;
-// int size=10;
-// int arr[10];
-// int top=-1;
-// void push(){
-//     if(top == size-1){
-//         cout<<"Stack is full";
-//     }
-
-//     else{
-//         int x;
-//         cout<<"Enter a number to push :";
-//         cin>>x;
-//         top++;
-//         arr[top]=x;
-//          cout<<arr[top]<<endl;
-//     }
-// }
-// // void display(){
-// //     for(int i=0;i<=top;i++){
-// //         cout<<arr[top]<<endl;
-
-// //     }
-// // }
-// int main(){
-// push();
-// push();
-// // display();
-
-// }
+ 

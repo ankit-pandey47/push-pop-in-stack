@@ -4,7 +4,7 @@ int arr[10];
 int top = -1;
 int size = 10;
 
-void push(int x)
+void push()
 {
 
     if (top == size - 1)
@@ -13,13 +13,22 @@ void push(int x)
     }
     else
     {
-
+        int x;
+        cout << "Enter the Elemnet to Push :";
+        cin >> x;
         top++;
         arr[top] = x;
-        cout << arr[top] << endl;
     }
 }
 
+//display function displays the elemnets pushed into the stack
+void display()
+{
+    for (int i = 0; i <= top; i++)
+    {
+        cout << arr[i] << endl;
+    }
+}
 // pop function to remove element
 void pop()
 {
@@ -36,12 +45,18 @@ void pop()
 }
 int main()
 {
-    push(1);
-    push(12);
+    int n;
+    cout << "Enter the total number of element u want to push :";
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        push();
+    }
+
+    display();
 
     cout << "Popped element from the top is : " << endl;
-
+    
+    pop();    //call the function pop as per ur need to pop or use a loop to pop
     pop();
 }
-
- 
